@@ -14,8 +14,17 @@ module.exports = {
         ]
     },
     output: {
+        // publicPath: "public",
+
         // the name of the file that the transpalled code is stored on
         filename: "bundle.js",
         path: path.resolve(__dirname, "public")
+    },
+
+    devServer: {
+        //tell the dev server where to serve the ts compilled code in memory from
+        publicPath: "/",
+        contentBase: "./public",
+        hot: true
     }
 }

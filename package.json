@@ -4,6 +4,7 @@
   "description": "Template to be used to set up typescript projects",
   "main": "index.js",
   "scripts": {
+    "serve": "webpack serve",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@webpack-cli/serve": "^1.3.0",
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.3",
     "webpack": "^5.24.3",
