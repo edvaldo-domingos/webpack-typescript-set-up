@@ -1,6 +1,11 @@
 const path = require("path");
 
 module.exports = {
+
+    mode: "development",
+    //allow to debug on the browser and let you see the origin of the line of code not just the bundled .js transpalled file
+    devtool: 'eval-source-map',
+
     // where webpack starts reading
     entry: "./src/index.ts",
     module: {
@@ -13,6 +18,11 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        // what extensions (files) we want webpack to be able to resolve
+        extensions: ['.ts', '.js']
+    },
+
     output: {
         // publicPath: "public",
 
